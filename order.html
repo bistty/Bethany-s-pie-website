@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css" type="text/css" />
+    <title>Bethany's Pie Shop</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pies.html">Pies</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="order">
+      <aside><img src="./images/logo.png" alt="logo" /></aside>
+      <article class="form">
+        <h1>Order</h1>
+        <div class="pie">
+          <img src="" alt="" />
+          <div class="columns">
+            <div class="title"></div>
+            <div class="price"></div>
+          </div>
+          <p class="desc"><a> </a></p>
+        </div>
+        <div class="modal hidden">
+          <p>Your order has succesfully been submitted. 😍</p>
+        </div>
+        <div class="overlay hidden"></div>
+        <form action="" method="post" id="contactForm">
+          <div class="input-group">
+            <div><label for="first-name">First Name</label></div>
+            <div>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div><label for="last-name">Last Name</label></div>
+            <div>
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div><label for="address">Address</label></div>
+            <div>
+              <input type="text" name="address" id="address" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div><label for="state">State</label></div>
+            <div><input type="text" name="state" id="state" required /></div>
+          </div>
+
+          <div class="input-group">
+            <div><label for="postal-code">Postal Code</label></div>
+            <div>
+              <input type="text" name="postal-code" id="postal-code" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div><label for="comments">Comments</label></div>
+            <div>
+              <textarea
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Order" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pies.html">Pies</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+  <script src="script.js"></script>
+</html>
